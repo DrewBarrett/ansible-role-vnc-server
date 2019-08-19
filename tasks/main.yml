@@ -5,7 +5,7 @@
   become: true
 
 - name: Configure GDM
-  lineinfile:
+  ini_file:
     line: Enable=true
     path: /etc/gdm/custom.conf
     section: xdmcp
