@@ -15,7 +15,7 @@ Ansible version >= 2.4
 Role Variables
 --------------
 
-None
+manage_firewall: (bool) Should this module configure appropriate firewall rules
 
 Dependencies
 ------------
