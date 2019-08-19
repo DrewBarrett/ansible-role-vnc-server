@@ -3,7 +3,7 @@ drewbarrett.vnc_server
 
 [![Build Status](https://travis-ci.org/shellbro/ansible-role-vnc-server.svg?branch=master)](https://travis-ci.org/shellbro/ansible-role-vnc-server)
 
-https://galaxy.ansible.com/shellbro/vnc_server
+https://galaxy.ansible.com/drewbarrett/vnc_server
 
 Ansible role for setting up a multiuser VNC server on CentOS 7 using tigervnc. Assumes GDM as display manager
 
