@@ -1,11 +1,11 @@
-shellbro.vnc_server
+drewbarrett.vnc_server
 ===================
 
 [![Build Status](https://travis-ci.org/shellbro/ansible-role-vnc-server.svg?branch=master)](https://travis-ci.org/shellbro/ansible-role-vnc-server)
 
 https://galaxy.ansible.com/shellbro/vnc_server
 
-Ansible role for setting up a VNC server on CentOS 7
+Ansible role for setting up a multiuser VNC server on CentOS 7 using tigervnc. Assumes GDM as display manager
 
 Requirements
 ------------
@@ -15,9 +15,7 @@ Ansible version >= 2.4
 Role Variables
 --------------
 
-* user - user to start a VNC server (required)
-* password - default VNC password (by default `password`)
-* display - display number (by default `:2`)
+None
 
 Dependencies
 ------------
@@ -29,10 +27,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-        - role: shellbro.vnc_server
-          user: shellbro
-          password: vncpassword
-          display: :3
+        - role: drewbarrett.vnc_server
 
 License
 -------
