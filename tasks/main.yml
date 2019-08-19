@@ -16,6 +16,14 @@
     - Restart VNC service
     - Restart GDM
 
+- name: Configure firewall
+  firewalld:
+    service: vnc_server
+    permanent: yes
+    immediate: yes
+    state: enabled
+  when: configure_firewall
+
 - name: Start and enable VNC socket
   tags: notest
   systemd:
