@@ -6,7 +6,6 @@
 
 - name: Configure GDM
   ini_file:
-    line: Enable=true
     path: /etc/gdm/custom.conf
     section: xdmcp
     option: Enable
