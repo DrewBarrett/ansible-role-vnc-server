@@ -1,8 +1,11 @@
 ---
+- name: Restart GDM
+  service:
+    name: gdm
+    state: restarted
 - name: Restart VNC service
   systemd:
-    daemon_reload: true
-    name: vncserver-{{ user }}@{{ display }}
+    name: xvnc.socket
     state: restarted
   become: true
   when: notest is not defined
