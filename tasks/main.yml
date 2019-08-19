@@ -17,7 +17,7 @@
 
 - name: Configure firewall
   firewalld:
-    service: vnc_server
+    service: vnc-server
     permanent: yes
     immediate: yes
     state: enabled
