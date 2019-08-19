@@ -1,2 +1,2 @@
 ---
-manage_firewall: yes
+configure_firewall: yes
