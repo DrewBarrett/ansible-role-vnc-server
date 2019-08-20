@@ -22,7 +22,7 @@
     replace: '\1 {{resolution}} \3'
   notify:
     - Reload systemd
-    - Restart VNC Service
+    - Restart VNC service
 
 - name: Configure firewall
   firewalld:
