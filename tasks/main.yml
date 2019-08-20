@@ -19,7 +19,7 @@
   replace:
     path: /etc/systemd/system/xvnc@.service
     regexp: '^(ExecStart=.*geometry(?!.*\b{{ resolution }}\b)([0-9]+x[0-9]+)(.*)$'
-    line: '\1 {{resolution}} \3'
+    replace: '\1 {{resolution}} \3'
   notify:
     - Reload systemd
     - Restart VNC Service
